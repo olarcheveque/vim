@@ -1,0 +1,16 @@
+Custom Settings for Vim
+=======================
+
+INSTALL
+-------
+
+* cd ~
+
+* git clone git@github.com:olarcheveque/vim.git ~/.vim
+
+* ln -s ~/.vim/vimrc .vimrc
+
+* cd ~/.vim
+
+* ./up_submodule.sh
+
