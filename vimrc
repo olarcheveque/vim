@@ -12,3 +12,4 @@ filetype plugin indent on
 
 syntax on
 
+execute 'source' . $HOME . '/.vim/shortkeys.vim'
