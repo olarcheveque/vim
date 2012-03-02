@@ -13,3 +13,10 @@ filetype plugin indent on
 syntax on
 
 execute 'source' . $HOME . '/.vim/shortkeys.vim'
+
+" Removes trailing spaces
+function TrimSpaces()
+    %s/\s*$//
+    ''
+:endfunction
+

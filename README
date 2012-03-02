@@ -14,3 +14,30 @@ INSTALL
 
 * ./up_submodule.sh
 
+
+MODULES
+-------
+
+* nerdtree  : https://github.com/vim-scripts/The-NERD-tree.git
+
+* pep8      : https://github.com/vim-scripts/pep8.git
+
+* pyflakes  : https://github.com/mitechie/pyflakes-pathogen.git
+
+* snipmate  : https://github.com/msanders/snipmate.vim.git
+
+* vim-align : https://github.com/tsaleh/vim-align.git
+
+
+CUSTOM
+------
+
+<F5> : PEP8
+
+<F9> : NerdTree
+
+AUTO : PyFlakes
+
+<SELECTION>Align<CHAR><CR> : align on the char
+
+:call TrimSpaces() : trim spaces
