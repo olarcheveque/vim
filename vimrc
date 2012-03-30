@@ -1,4 +1,6 @@
 set t_Co=256
+let g:solarized_termcolors=256
+
 
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
