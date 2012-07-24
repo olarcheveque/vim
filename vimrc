@@ -1,5 +1,6 @@
 set t_Co=256
 let g:solarized_termcolors=256
+set pastetoggle=<F2>
 
 
 call pathogen#runtime_append_all_bundles()
