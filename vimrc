@@ -20,6 +20,7 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+let g:omni_sql_no_default_maps = 1
 
 execute 'source' . $HOME . '/.vim/shortkeys.vim'
 
