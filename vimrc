@@ -6,6 +6,8 @@ set pastetoggle=<F2>
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+autocmd BufWritePost *.py call Flake8()
+
 set expandtab
 set shiftwidth=4
 set softtabstop=4
