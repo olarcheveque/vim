@@ -16,6 +16,14 @@ filetype plugin indent on
 syntax on
 syntax enable
 
+set smartindent
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+
+" highlight over 80chars (>=7.3)
+let &colorcolumn=join(range(81,999),",")
+
 " Color and Scheme
 Bundle 'Solarized'
 set t_Co=256
@@ -28,8 +36,11 @@ Bundle 'snipMate'
 
 " Python
 Bundle 'nvie/vim-flake8'
+autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
 autocmd BufWritePost *.py call Flake8()
 
+" Git
+Bundle 'fugitive.vim'
 
 "
 "
