@@ -8,9 +8,9 @@ call vundle#rc()
 " let Vundle manage Vundle, required
 Bundle 'gmarik/vundle'
 
-" =======
-" Plugins
-" =======
+" =================
+" Customs & Plugins
+" =================
 
 filetype plugin indent on
 syntax on
@@ -25,6 +25,9 @@ set laststatus=2
 set statusline=%<%f%w%h%m%r\  " Filename + options
 set statusline+=%P\  " position
 set statusline+=%{fugitive\#statusline()} "  Git Hotness
+
+" Mappings
+map  :q!
 
 " highlight over 80chars (>=7.3)
 let &colorcolumn=join(range(81,999),",")
