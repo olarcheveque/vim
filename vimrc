@@ -50,6 +50,17 @@ autocmd BufWritePost *.py call Flake8()
 " Git
 Bundle 'fugitive.vim'
 
+" Introspection
+" :TagbarToggle
+Bundle 'Tagbar' 
+
+" Cleanup source
+
+" Can't make it work for now
+"Bundle 'michalliu/jsruntime.vim'
+"Bundle 'michalliu/jsoncodecs.vim'
+"Bundle 'michalliu/sourcebeautify.vim'
+
 "
 "
 " Brief help
