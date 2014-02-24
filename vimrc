@@ -27,7 +27,22 @@ set statusline+=%P\  " position
 set statusline+=%{fugitive\#statusline()} "  Git Hotness
 
 " Mappings
+
+" quit without saving
 map  :q!
+
+" HTML clean
+map <leader>f :%s/{% /<djdiv>/g<bar>%s/ %}/<\/djdiv>/g<bar>call HtmlBeautify()<bar>%s/<djdiv>/{% /g<bar>%s/<\/djdiv>/ %}/g<cr> 
+
+" Toggle fold
+" set foldmethod=indent
+inoremap <F9> <C-O>za
+nnoremap <F9> za
+onoremap <F9> <C-C>za
+vnoremap <F9> zf
+nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+vnoremap <Space> zf
+
 
 " highlight over 80chars (>=7.3)
 let &colorcolumn=join(range(81,999),",")
@@ -55,14 +70,11 @@ Bundle 'fugitive.vim'
 Bundle 'Tagbar' 
 
 " Cleanup source
+Bundle 'maksimr/vim-jsbeautify'
+Bundle 'einars/js-beautify'
+" set path to js-beautify file
+let g:jsbeautify_file = fnameescape(fnamemodify(expand("<sfile>"), ":h")."/bundle/js-beautify/beautify.js") 
 
-" Can't make it work for now
-"Bundle 'michalliu/jsruntime.vim'
-"Bundle 'michalliu/jsoncodecs.vim'
-"Bundle 'michalliu/sourcebeautify.vim'
-
-"
-"
 " Brief help
 " :BundleList          - list configured bundles
 " :BundleInstall(!)    - install (update) bundles
