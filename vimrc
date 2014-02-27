@@ -64,7 +64,7 @@ Bundle 'snipMate'
 
 " Python
 Bundle 'nvie/vim-flake8'
-autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
+autocmd Filetype python set ts=8 et sw=4 sts=4
 autocmd BufWritePost *.py call Flake8()
 
 " Git
