@@ -11,3 +11,7 @@ Dependances
 Tagbar
 ------
 sudo aptitude install exuberant-ctags
+
+Syntastic
+---------
+sudo npm install -g jslint

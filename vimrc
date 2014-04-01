@@ -81,6 +81,12 @@ Bundle 'einars/js-beautify'
 " set path to js-beautify file
 let g:jsbeautify_file = fnameescape(fnamemodify(expand("<sfile>"), ":h")."/bundle/js-beautify/beautify.js") 
 
+" Javascript
+Bundle 'pangloss/vim-javascript'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'scrooloose/syntastic'
+let g:syntastic_check_on_open=0
+
 " Brief help
 " :BundleList          - list configured bundles
 " :BundleInstall(!)    - install (update) bundles
