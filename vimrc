@@ -87,6 +87,12 @@ let g:jsbeautify_file = fnameescape(fnamemodify(expand("<sfile>"), ":h")."/bundl
 " Javascript syntastic
 " sudo npm install -g jshint 
 
+" Javascript
+Bundle 'pangloss/vim-javascript'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'scrooloose/syntastic'
+let g:syntastic_check_on_open=0
+
 " Brief help
 " :BundleList          - list configured bundles
 " :BundleInstall(!)    - install (update) bundles

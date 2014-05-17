@@ -4,6 +4,9 @@ snippet utf8
 snippet pdb
 	import pdb; pdb.set_trace()
 
+snippet ipdb
+	import ipdb; ipdb.set_trace()
+
 snippet pkg
 	__import__('pkg_resources').declare_namespace(__name__)
 
@@ -12,3 +15,9 @@ snippet cov
 
 snippet nqa
 	# NOQA
+=======
+snippet imp_
+	from django.utils.translation import ugettext_lazy as _
+
+snippet impreverse
+	from django.core.urlresolvers import reverse
