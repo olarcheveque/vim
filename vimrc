@@ -15,6 +15,8 @@ Bundle 'gmarik/vundle'
 filetype plugin indent on
 syntax on
 syntax enable
+Bundle 'Syntastic'
+
 
 set smartindent
 set expandtab
@@ -79,7 +81,11 @@ Bundle 'Tagbar'
 Bundle 'maksimr/vim-jsbeautify'
 Bundle 'einars/js-beautify'
 " set path to js-beautify file
-let g:jsbeautify_file = fnameescape(fnamemodify(expand("<sfile>"), ":h")."/bundle/js-beautify/beautify.js") 
+let g:jsbeautify_file = fnameescape(fnamemodify(expand("<sfile>"), ":h")."/bundle/js-beautify/beautify.js")
+
+
+" Javascript syntastic
+" sudo npm install -g jshint 
 
 " Brief help
 " :BundleList          - list configured bundles
