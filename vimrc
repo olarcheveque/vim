@@ -33,7 +33,12 @@ set statusline=%<%f%w%h%m%r\  " Filename + options
 set statusline+=%P\  " position
 set statusline+=%{fugitive\#statusline()} "  Git Hotness
 
+
+" Explorer
+Bundle 'scrooloose/nerdtree'
+
 " Mappings
+map <C-n> :NERDTreeToggle<CR>
 
 " quit without saving
 map  :q!
