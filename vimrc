@@ -44,7 +44,7 @@ map <C-n> :NERDTreeToggle<CR>
 map  :q!
 
 " HTML clean
-map <leader>f :%s/{% /<djdiv>/g<bar>%s/ %}/<\/djdiv>/g<bar>call HtmlBeautify()<bar>%s/<djdiv>/{% /g<bar>%s/<\/djdiv>/ %}/g<cr> 
+Bundle 'Valloric/MatchTagAlways'
 
 " Toggle fold
 " set foldmethod=indent
@@ -88,6 +88,17 @@ Bundle 'einars/js-beautify'
 " set path to js-beautify file
 let g:jsbeautify_file = fnameescape(fnamemodify(expand("<sfile>"), ":h")."/bundle/js-beautify/beautify.js")
 
+" Transform django tags, to html fake tags to be understood by HtmlBeautify
+function! CleanHTML()
+    let save_cursor = getpos(".")
+    execute '%s/{% /<djdiv>/g'
+    execute '%s/ %}/<\/djdiv>/g'
+    execute 'call HtmlBeautify()'
+    execute '%s/<djdiv>/{% /g'
+    execute '%s/<\/djdiv>/ %}/g'
+    call setpos('.', save_cursor)
+endfunction
+map <C-h> :silent call CleanHTML()
 
 " Javascript syntastic
 " sudo npm install -g jshint 
