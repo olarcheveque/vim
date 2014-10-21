@@ -28,11 +28,13 @@ set foldnestmax=10      "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
 set foldlevel=1         "this is just what i use
 
-set laststatus=2
-set statusline=%<%f%w%h%m%r\  " Filename + options
-set statusline+=%P\  " position
-set statusline+=%{fugitive\#statusline()} "  Git Hotness
 
+" Status
+" set statusline=%<%f%w%h%m%r\  " Filename + options
+" set statusline+=%P\  " position
+"set statusline+=%{fugitive\#statusline()} "  Git Hotness
+set laststatus=2
+Bundle 'bling/vim-airline'
 
 " Explorer
 Bundle 'scrooloose/nerdtree'
@@ -108,6 +110,14 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'scrooloose/syntastic'
 let g:syntastic_check_on_open=0
+
+" Quick edit
+" http://designshack.net/articles/css/7-awesome-emmet-html-time-saving-tips/
+Bundle 'mattn/emmet-vim'
+function! s:zen_html_tab()
+  return "\<c-y>,"
+endfunction
+autocmd FileType html imap <buffer><expr><tab> <sid>zen_html_tab()
 
 " Brief help
 " :BundleList          - list configured bundles
