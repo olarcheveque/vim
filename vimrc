@@ -39,6 +39,10 @@ Bundle 'bling/vim-airline'
 " Explorer
 Bundle 'scrooloose/nerdtree'
 
+Bundle 'kien/ctrlp.vim'
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+
 " Mappings
 map <C-n> :NERDTreeToggle<CR>
 

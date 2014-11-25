@@ -8,9 +8,16 @@ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 Dependances
 ===========
 
+Python
+------
+
+pip install flake8
+
+
 Tagbar
 ------
 sudo aptitude install exuberant-ctags
+
 
 Syntastic
 ---------
