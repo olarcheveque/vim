@@ -72,6 +72,11 @@ let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
 
+" Table wiki realign
+" Assuming your <Leader> is \:
+" \tl or \tt - turns selected lines into table (left-aligned text)
+Bundle 'Stormherz/tablify'
+
 " custom Shortcuts
 Bundle 'snipMate'
 
