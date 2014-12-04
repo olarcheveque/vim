@@ -122,11 +122,8 @@ let g:syntastic_check_on_open=0
 
 " Quick edit
 " http://designshack.net/articles/css/7-awesome-emmet-html-time-saving-tips/
+" |<ctrl-y>,| to generate html
 Bundle 'mattn/emmet-vim'
-function! s:zen_html_tab()
-  return "\<c-y>,"
-endfunction
-autocmd FileType html imap <buffer><expr><tab> <sid>zen_html_tab()
 
 " Brief help
 " :BundleList          - list configured bundles
