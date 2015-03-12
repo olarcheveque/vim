@@ -17,6 +17,7 @@ syntax on
 syntax enable
 Bundle 'Syntastic'
 
+let mapleader = ","
 
 set smartindent
 set expandtab
@@ -36,12 +37,11 @@ set foldlevel=1         "this is just what i use
 set laststatus=2
 Bundle 'bling/vim-airline'
 
-" Explorer
+" Explorer & navigation
 Bundle 'scrooloose/nerdtree'
-
+Bundle 'Lokaltog/vim-easymotion'
 Bundle 'kien/ctrlp.vim'
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-
 
 " Mappings
 map <C-n> :NERDTreeToggle<CR>
@@ -88,6 +88,7 @@ autocmd BufWritePost *.py call Flake8()
 
 " Git
 Bundle 'fugitive.vim'
+set diffopt+=vertical
 
 " Introspection
 " :TagbarToggle
