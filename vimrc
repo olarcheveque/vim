@@ -70,6 +70,8 @@ Bundle 'snipMate'
 " Python
 Bundle 'tell-k/vim-autopep8'
 Bundle 'nvie/vim-flake8'
+Bundle 'davidhalter/jedi-vim'
+let g:jedi#popup_on_dot = 0
 autocmd Filetype python set ts=8 et sw=4 sts=4
 autocmd BufWritePost *.py call Flake8()
 
