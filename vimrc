@@ -46,21 +46,8 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 " Mappings
 map <C-n> :NERDTreeToggle<CR>
 
-" quit without saving
-map  :q!
-
 " HTML clean
 Bundle 'Valloric/MatchTagAlways'
-
-" Toggle fold
-" set foldmethod=indent
-inoremap <F9> <C-O>za
-nnoremap <F9> za
-onoremap <F9> <C-C>za
-vnoremap <F9> zf
-nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
-vnoremap <Space> zf
-
 
 " highlight over 80chars (>=7.3)
 let &colorcolumn=join(range(81,999),",")
