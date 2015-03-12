@@ -101,6 +101,9 @@ function! CleanHTML()
 endfunction
 map <C-h> :silent call CleanHTML()
 
+" ctrl+n several times in normal mode
+Bundle 'terryma/vim-multiple-cursors'
+
 " Javascript syntastic
 " sudo npm install -g jshint 
 
