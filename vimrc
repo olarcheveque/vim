@@ -70,6 +70,7 @@ Bundle 'snipMate'
 " Python
 Bundle 'tell-k/vim-autopep8'
 Bundle 'nvie/vim-flake8'
+let g:flake8_ignore="E501"
 Bundle 'davidhalter/jedi-vim'
 let g:jedi#popup_on_dot = 0
 let g:jedi#show_call_signatures = "2"
