@@ -35,8 +35,10 @@ set foldlevel=1         "this is just what i use
 " set statusline=%<%f%w%h%m%r\  " Filename + options
 " set statusline+=%P\  " position
 "set statusline+=%{fugitive\#statusline()} "  Git Hotness
+" set laststatus=2
+" Bundle 'bling/vim-airline'
+source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
 set laststatus=2
-Bundle 'bling/vim-airline'
 
 " Explorer & navigation
 Bundle 'scrooloose/nerdtree'
