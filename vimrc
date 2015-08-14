@@ -32,11 +32,6 @@ set foldlevel=1         "this is just what i use
 
 
 " Status
-" set statusline=%<%f%w%h%m%r\  " Filename + options
-" set statusline+=%P\  " position
-"set statusline+=%{fugitive\#statusline()} "  Git Hotness
-" set laststatus=2
-" Bundle 'bling/vim-airline'
 source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
 set laststatus=2
 
@@ -105,6 +100,7 @@ function! CleanHTML()
     call setpos('.', save_cursor)
 endfunction
 map <C-h> :silent call CleanHTML()
+map <C-j> :silent call JsBeautify()
 
 " ctrl+n several times in normal mode
 Bundle 'terryma/vim-multiple-cursors'
